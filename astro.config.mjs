@@ -7,7 +7,6 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  outDir: "./docs", // Au lieu de ./dist
   site: "https://vasulvius.github.io",
   base: "/Resume",
   integrations: [preact(), icon(), sitemap()],
