@@ -1,5 +1,5 @@
 
-# NeonMint Template Documentation
+# NeonMint Template Documentation 
 
 ![neonmint](https://github.com/user-attachments/assets/068da5e4-50c0-4134-99d3-8cb8ec867d9f)
 
