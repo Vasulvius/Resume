@@ -7,7 +7,8 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://efeele.dev",
+  site: "https://vasulvius.github.io",
+  base: "/Resume",
   integrations: [preact(), icon(), sitemap()],
 
   vite: {
