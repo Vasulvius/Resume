@@ -1,0 +1,38 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+  {
+    date: "oct. 2024 - Present",
+    title: "AI Engineer & Data Scientist",
+    company: "SOMA",
+    description:
+      "At SOMA, I work as an AI Engineer and Data Scientist, leading a variety of AI projects. I’m currently developing a versatile LLM assistant capable of ingesting multiple data sources (documents, databases, APIs), as well as building and maintaining an open-source Python framework called framefox, designed to accelerate backend development.",
+  },
+  {
+    date: "nov. 2022 - oct. 2024",
+    title: "Data Scientist",
+    company: "MI-GSO",
+    description:
+      "default",
+  }
+];
+---
+
+<div class="relative max-md:mt-0 mt-8" aria-label="Professional experience">
+  <ol class="relative mt-10">
+    {
+      EXPERIENCE.map((experience, index) => (
+        <li class="">
+          <article role="article" aria-labelledby={`experience-title-${index}`}>
+            <div
+              class="flex flex-col gap-2  text-zinc-00 dark:text-zinc-300 md:col-span-3"
+              aria-describedby={`experience-title-${index}`}
+            >
+              <ExperienceItem {...experience} />
+            </div>
+          </article>
+        </li>
+      ))
+    }
+  </ol>
+</div>
